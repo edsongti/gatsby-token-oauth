@@ -1,0 +1,20 @@
+{
+  "name": "token-drupal-oauth2",
+  "version": "1.0.0",
+  "description": "Get an OAuth token from Drupal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "OAuth",
+    "Drupal",
+    "Contenta CMS"
+  ],
+  "author": "edsoncarlosgti",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0"
+  }
+}
