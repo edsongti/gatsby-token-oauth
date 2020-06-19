@@ -1,5 +1,5 @@
 {
-  "name": "token-oauth2",
+  "name": "gatsby-token-oauth2",
   "version": "1.0.0",
   "description": "Get an OAuth token",
   "main": "index.js",
@@ -18,10 +18,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edsongti/token-oauth2.git"
+    "url": "git+https://github.com/edsongti/gatsby-token-oauth2.git"
   },
   "bugs": {
-    "url": "https://github.com/edsongti/token-oauth2/issues"
+    "url": "https://github.com/edsongti/gatsby-token-oauth2/issues"
   },
-  "homepage": "https://github.com/edsongti/token-oauth2#readme"
+  "homepage": "https://github.com/edsongti/gatsby-token-oauth2#readme"
 }
