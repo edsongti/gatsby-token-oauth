@@ -45,7 +45,7 @@ const refreshToken = async (dataToken) => {
   formData.append("scope", process.env.GATSBY_CLIENT_SCOPE);
   formData.append("refresh_token", dataToken.refresh_token);
   formData.append("username", process.env.GATSBY_SOURCE_USER);
-  formData.append("password", process.env.GATSBY_SOURCE_USER);
+  formData.append("password", process.env.GATSBY_SOURCE_PASSWORD);
 
   return await axios
     .post(`${process.env.GATSBY_SOURCE_ROOT}/oauth/token`, formData, {
