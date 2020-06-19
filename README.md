@@ -14,12 +14,14 @@ npm install token-oauth2
 
 Create a .env file in the root of your project and inform the value of these variables:
 
+```
 GATSBY_SOURCE_ROOT=https://xxxxxxx
 GATSBY_CLIENT_ID=xxxxx
 GATSBY_CLIENT_SECRET=xxxxx
 GATSBY_CLIENT_SCOPE=xxxxx
 GATSBY_SOURCE_USER=xxxxx
 GATSBY_SOURCE_PASSWORD=xxxxx
+```
 
 In your application, require and configure dotenv:
 
