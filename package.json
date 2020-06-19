@@ -1,15 +1,13 @@
 {
-  "name": "token-drupal-oauth2",
+  "name": "token-oauth2",
   "version": "1.0.0",
-  "description": "Get an OAuth token from Drupal",
+  "description": "Get an OAuth token",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "OAuth",
-    "Drupal",
-    "Contenta CMS"
+    "OAuth"
   ],
   "author": "edsoncarlosgti",
   "license": "MIT",
@@ -20,10 +18,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edsongti/token-drupal-oauth2.git"
+    "url": "git+https://github.com/edsongti/token-oauth2.git"
   },
   "bugs": {
-    "url": "https://github.com/edsongti/token-drupal-oauth2/issues"
+    "url": "https://github.com/edsongti/token-oauth2/issues"
   },
-  "homepage": "https://github.com/edsongti/token-drupal-oauth2#readme"
+  "homepage": "https://github.com/edsongti/token-oauth2#readme"
 }

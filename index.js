@@ -1,11 +1,11 @@
 import axios from "axios";
 
 /**
- * Get an OAuth token from Drupal.
+ * Get an OAuth token.
  *
  * @returns {Object} Json
  *   Returns a json object with the token saved in localStorage
- *   or returned from Drupal.
+ *   or returned from the source.
  */
 const getToken = async () => {
   // Check if we already have access token in localStorage
@@ -32,10 +32,10 @@ const getToken = async () => {
 };
 
 /**
- * Get a refreshed OAuth token from Drupal.
+ * Get a refreshed OAuth token.
  *
  * @returns Json
- *   Returns a json object with the refreshed token returned from Drupal.
+ *   Returns a json object with the refreshed token returned.
  */
 const refreshToken = async (dataToken) => {
   const formData = new FormData();
@@ -44,11 +44,11 @@ const refreshToken = async (dataToken) => {
   formData.append("grant_type", "refresh_token");
   formData.append("scope", process.env.GATSBY_CLIENT_SCOPE);
   formData.append("refresh_token", dataToken.refresh_token);
-  formData.append("username", process.env.GATSBY_DRUPAL_USER);
-  formData.append("password", process.env.GATSBY_DRUPAL_PASSWORD);
+  formData.append("username", process.env.GATSBY_SOURCE_USER);
+  formData.append("password", process.env.GATSBY_SOURCE_USER);
 
   return await axios
-    .post(`${process.env.GATSBY_DRUPAL_ROOT}/oauth/token`, formData, {
+    .post(`${process.env.GATSBY_SOURCE_ROOT}/oauth/token`, formData, {
       headers: {
         Accept: "application/json",
       },
@@ -61,10 +61,10 @@ const refreshToken = async (dataToken) => {
 };
 
 /**
- * Get a new OAuth token from Drupal.
+ * Get a new OAuth token.
  *
  * @returns Json
- *   Returns a json object with the new token returned from Drupal.
+ *   Returns a json object with the new token returned.
  */
 const fetchOauthToken = async () => {
   const formData = new FormData();
@@ -72,10 +72,10 @@ const fetchOauthToken = async () => {
   formData.append("client_secret", process.env.GATSBY_CLIENT_SECRET);
   formData.append("grant_type", "password");
   formData.append("scope", process.env.GATSBY_CLIENT_SCOPE);
-  formData.append("username", process.env.GATSBY_DRUPAL_USER);
-  formData.append("password", process.env.GATSBY_DRUPAL_PASSWORD);
+  formData.append("username", process.env.GATSBY_SOURCE_USER);
+  formData.append("password", process.env.GATSBY_SOURCE_PASSWORD);
   return await axios
-    .post(`${process.env.GATSBY_DRUPAL_ROOT}/oauth/token`, formData, {
+    .post(`${process.env.GATSBY_SOURCE_ROOT}/oauth/token`, formData, {
       headers: {
         Accept: "application/json",
       },

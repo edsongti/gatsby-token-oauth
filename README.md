@@ -1,25 +1,25 @@
-# token-drupal-oauth2
+# token-oauth2
 
-token-drupal-oauth2 is a library for dealing with drupal token.
+token-oauth2 is a library for dealing with token.
 
 ## Installation
 
-Use the npm to install token-drupal-oauth2.
+Use the npm to install token-oauth2.
 
 ```bash
-npm install token-drupal-oauth2
+npm install token-oauth2
 ```
 
 ## Usage
 
 Create a .env file in the root of your project and inform the value of these variables:
 
-GATSBY_DRUPAL_ROOT=https://xxxxxxx
+GATSBY_SOURCE_ROOT=https://xxxxxxx
 GATSBY_CLIENT_ID=xxxxx
 GATSBY_CLIENT_SECRET=xxxxx
 GATSBY_CLIENT_SCOPE=xxxxx
-GATSBY_DRUPAL_USER=xxxxx
-GATSBY_DRUPAL_PASSWORD=xxxxx
+GATSBY_SOURCE_USER=xxxxx
+GATSBY_SOURCE_PASSWORD=xxxxx
 
 In your application, require and configure dotenv:
 
@@ -30,7 +30,7 @@ require("dotenv").config();
 In your component:
 
 ```es6
-import getToken from "token-drupal-oauth2";
+import getToken from "token-oauth2";
 ```
 
 And get a token:
