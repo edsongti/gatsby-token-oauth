@@ -96,4 +96,4 @@ const saveToken = (json) => {
   localStorage.setItem("access-token", JSON.stringify(token));
 };
 
-module.exports = { getToken };
+export default getToken;

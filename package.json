@@ -16,5 +16,14 @@
   "dependencies": {
     "axios": "^0.19.2",
     "dotenv": "^8.2.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edsongti/token-drupal-oauth2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/edsongti/token-drupal-oauth2/issues"
+  },
+  "homepage": "https://github.com/edsongti/token-drupal-oauth2#readme"
 }
