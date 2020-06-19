@@ -1,13 +1,13 @@
-# gatsby-token-oauth2
+# gatsby-token-oauth
 
-gatsby-token-oauth2 is a library for dealing with token.
+gatsby-token-oauth is a library for dealing with token.
 
 ## Installation
 
-Use the npm to install gatsby-token-oauth2.
+Use the npm to install gatsby-token-oauth.
 
 ```bash
-npm install gatsby-token-oauth2
+npm install gatsby-token-oauth
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ require("dotenv").config();
 In your component:
 
 ```es6
-import getToken from "gatsby-token-oauth2";
+import getToken from "gatsby-token-oauth";
 ```
 
 And get a token:
